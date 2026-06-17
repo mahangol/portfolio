@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login — Folio Laptops</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ============================================================
+     NAVIGATION
+============================================================ -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Folio<span>.</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About Us</a>
+    </div>
+    <div class="nav-search">
+      <span class="nav-search-icon">🔍</span>
+      <input type="text" placeholder="Search laptops…" />
+    </div>
+    <a href="cart.html" class="nav-cart">
+      🛒
+      <span class="cart-badge">0</span>
+    </a>
+    <button class="nav-hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<div class="nav-mobile">
+  <a href="index.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="about.html">About Us</a>
+  <a href="cart.html">Cart 🛒</a>
+  <a href="login.html">Login</a>
+</div>
+
+<!-- ============================================================
+     LOGIN CARD
+============================================================ -->
+<div class="login-page page-fade-in">
+  <div class="login-card">
+
+    <div class="login-logo">Folio<span>.</span></div>
+    <div class="login-tagline">Sign in to your account</div>
+
+    <form id="login-form" onsubmit="return false;">
+
+      <!-- Social login -->
+      <button type="button" class="social-btn">
+        <span>G</span> Continue with Google
+      </button>
+      <button type="button" class="social-btn">
+        <span>🍎</span> Continue with Apple
+      </button>
+
+      <div class="login-divider"><span>or sign in with email</span></div>
+
+      <!-- Email -->
+      <div class="form-group">
+        <label class="form-label" for="email">Email Address</label>
+        <input
+          class="form-input"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="you@example.com"
+          autocomplete="email"
+          required
+        />
+      </div>
+
+      <!-- Password -->
+      <div class="form-group">
+        <label class="form-label" for="password">Password</label>
+        <input
+          class="form-input"
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter your password"
+          autocomplete="current-password"
+          required
+        />
+      </div>
+
+      <!-- Remember me + Forgot -->
+      <div class="form-checkbox-row">
+        <label class="checkbox-label">
+          <input type="checkbox" id="remember" name="remember" />
+          Remember me
+        </label>
+        <a href="#" class="form-forgot">Forgot password?</a>
+      </div>
+
+      <!-- Submit -->
+      <button type="submit" class="btn btn-primary btn-full btn-lg">
+        Sign In →
+      </button>
+
+    </form>
+
+    <div class="login-footer-text">
+      Don't have an account? <a href="#">Create one free</a>
+    </div>
+
+    <div style="margin-top:28px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.06);
+                font-size:0.72rem;color:var(--gray-dark);text-align:center;line-height:1.7">
+      By signing in you agree to our
+      <a href="#" style="color:var(--accent)">Terms of Service</a> and
+      <a href="#" style="color:var(--accent)">Privacy Policy</a>.
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
